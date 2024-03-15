@@ -208,6 +208,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .position {
@@ -404,7 +405,7 @@ h4 {
     color: #8e8f99;
 }
 
-.customers-logo svg :hover {
+.customers-logo:hover svg {
     color: #10A5F5;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
