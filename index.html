@@ -45,8 +45,50 @@
             </div>
             <div class="modal is-hidden" data-modal>
                 <div class="modal-content">
+                    <form action="" autocomplete="on" novalidate>
+                        <p>Leave your contacts and we will call you back</p>
+                        <label for="" class="form-modal">
+                            <span>Name</span>
+                            <input type="text" name="name" class="input" required>
+                            <svg>
+                                <use href="./svg/icons.svg#icon-person"></use>
+                            </svg>
+                        </label>
+                        <label for="" class="form-modal">
+                            <span>Phone</span>
+                            <input type="text" name="phone" class="input" required>
+                            <svg>
+                                <use href="./svg/icons.svg#icon-phone"></use>
+                            </svg>
+                        </label>
+                        <label for="" class="form-modal">
+                            <span>Email</span>
+                            <input type="text" name="email" class="input" required>
+                            <svg>
+                                <use href="./svg/icons.svg#icon-email"></use>
+                            </svg>
+                        </label>
+
+                        <label for="" class="form-modal">
+                            <span>Comment</span>
+                            <textarea type="text" name="message" class="form-message" placeholder="Text input" cols="3"
+                                rows="3"></textarea>
+                        </label>
+                        <label class="accept">
+                            <input type="checkbox" class="check" name="agree" value="agree">
+                            <svg class="check-btn">
+                                <use href="./svg/check.svg#icon-check"></use>
+                            </svg>
+                            <span class="policy-text">I accept the terms and conditions of the <a href=""
+                                    class="privacy">Privacy
+                                    Policy</a></span>
+                        </label>
+
+                        <button type="submit" class="modal-btn">Send</button>
+                    </form>
                     <div class="button close-btn" data-modal-close>&times;</div>
                 </div>
+
             </div>
         </section>
         <!-- Section strenghts -->

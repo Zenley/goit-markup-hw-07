@@ -191,6 +191,8 @@ h4 {
     height: 584px;
     position: relative;
     margin-top: 70px;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .close-btn {
@@ -359,7 +361,7 @@ h4 {
 
 
 .social-media .icon:hover,
-.social-media .icon:focus{
+.social-media .icon:focus {
     background-color: #10A5F5;
 }
 
@@ -484,4 +486,161 @@ h4 {
 .social-media-footer :focus {
     background-color: #10A5F5;
     outline: none;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+
+.modal-content>form p {
+    margin-top: 52px;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2%;
+}
+
+.form-message {
+    height: 138px;
+    width: 360px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    position: absolute;
+    left: 2%;
+    margin-top: 30px;
+    outline: none;
+    padding-left: 12px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.form-message:focus {
+    border: 1px solid #4D5AE5;
+}
+
+textarea{
+    resize: none;
+}
+
+.input {
+    height: 38px;
+    width: 360px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    position: relative;
+    left: 2%;
+    outline: none;
+
+}
+
+.form-modal svg {
+    height: 24px;
+    width: 18px;
+}
+
+.input[type="text"] {
+    padding-left: 30px;
+    font-size: 14px;
+}
+
+.input[type="text"]+svg {
+    position: absolute;
+    top: 72%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.input[type="text"]:focus+svg {
+    fill: #4D5AE5;
+}
+
+.input:focus {
+    border: 1px solid #4D5AE5;
+}
+
+
+.form-modal>span {
+    margin-top: 8px;
+    position: relative;
+    left: 2%;
+    font-size: 12px;
+    color: #8E8F99;
+}
+
+.form-message::placeholder {
+    color: #2E2F4266;
+}
+
+.modal-btn {
+    border-radius: 4px;
+    padding: 16px 32px;
+    width: 169px;
+    height: 56px;
+    border: 1px solid #4D5AE5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4D5AE5;
+    position: absolute;
+    bottom: 24px;
+    left: 119px;
+    color: white;
+    outline: none;
+}
+
+.modal-btn:hover {
+    cursor: pointer;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: #E7E9FC;
+    border: 1px solid #E7E9FC;
+    color: #4D5AE5;
+    transform: scale(1.1);
+}
+
+.modal-btn:not(:hover) {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.check-btn {
+    width: 12px;
+    height: 12px;
+    color: transparent;
+    border: 1px solid #212121;
+    border-radius: 2px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 8px;
+    position: absolute;
+    bottom: 16.3%;
+    left: 6.2%;
+    cursor: pointer;
+}
+
+.check{
+    display: none;
+}
+
+
+.check:checked+.check-btn {
+    background-color: #4D5AE5;
+    border-color: #404BBF;
+    fill: #ffffff;
+    outline: none;
+}
+
+.accept{
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+
+.policy-text .privacy{
+    color: #404BBF;
+    text-decoration: underline;
+}
+
+.policy-text{
+    position: absolute;
+    bottom: 16%;
+    left: 12%;
+    cursor: pointer;
 }
