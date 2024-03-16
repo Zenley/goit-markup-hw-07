@@ -136,6 +136,7 @@ h4 {
     padding-top: 16px;
     display: flex;
     padding-left: 365px;
+    margin-left: 30px;
 }
 
 .footer {
@@ -160,6 +161,7 @@ h4 {
     color: #ffffff;
     line-height: 1.31;
     font-size: 18px;
+    margin-left: 30px;
 }
 
 .footer .container [href$=".html"]:hover,
@@ -490,4 +492,83 @@ h4 {
 
 .list-border {
     margin-bottom: 120px;
+}
+
+.subscribe-bottom {
+    color: white;
+    font-weight: 500;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.mail-style {
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    height: 40px;
+    width: 265px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    padding-left: 15px;
+}
+
+.mail-style:focus {
+    border: 2px solid #4D5AE5;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.1);
+    color: white;
+    padding-left: 15px;
+}
+
+.subscribe-footer {
+    position: absolute;
+    left: 56%;
+}
+
+.sub-btn {
+    background-color: #4D5AE5;
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+    outline: none;
+    color: #ffffff;
+    margin-left: 24px;
+    padding: 5px 24px 8px 24px;
+    height: 40px;
+}
+
+.sub-btn:focus,
+.sub-btn:hover {
+    background-color: #ffffff;
+    color: #4D5AE5;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.1);
+}
+
+
+.send {
+    width: 24px;
+    height: 20px;
+    fill: #ffffff;
+    margin-left: 10px;
+    margin-bottom: -3px;
+}
+
+
+.mail-style::placeholder {
+    color: #ffffff;
+    padding-left: 16px;
+    font-size: 12px;
+}
+
+.position-mail {
+    margin-top: 20px;
+}
+
+.sub-btn[type="submit"]:hover svg,
+.sub-btn[type="submit"]:focus svg {
+    fill: #4D5AE5;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }
