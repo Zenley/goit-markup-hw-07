@@ -56,73 +56,12 @@ h4 {
 
 /* NAV STYLING */
 
-.global-header {
-    display: flex;
-    justify-content: center;
-}
-
-.nav-bar {
-    list-style: none;
-    font-weight: 500;
-    color: var(--subtitle-color);
-    display: inline-flex;
-    justify-content: center;
-}
-
-.nav-list {
-    display: flex;
-    gap: 40px;
-    list-style: none;
-    line-height: 1.5;
-}
-
-.nav-list a {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    outline: none;
-}
-
-.nav-list a.active {
-    border-bottom: 4px solid #404BBF;
-    ;
-    padding-bottom: 16px;
-}
-
-[href$=".html"]:hover {
-    color: #404BBF;
-}
-
-[href$=".html"]:focus {
-    color: #404BBF;
-}
-
-/* PHONE AND EMAIL COLOR */
-
-.contact {
-    list-style: none;
-    line-height: 1.5;
-    display: inline-flex;
-    gap: 40px;
-    padding-left: 330px;
-}
-
-.contact>li>a {
-    color: var(--text-color)
-}
-
-.contact>li>a:hover {
-    color: #404BBF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contact>li>a:focus {
-    color: #404BBF;
-    outline: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.
 
 /* Background color for hero section */
+
 .hero-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office-backgrounnd.png");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/office.jpg");
     background-position: center;
     background-size: cover;
     height: 600px;
@@ -130,15 +69,6 @@ h4 {
     padding: 94px 0;
     position: relative;
 }
-
-
-/* Background color for the nav bar */
-.global-header {
-    background-color: #ffffff;
-    border: 1px solid #E7E9FC;
-}
-
-
 
 .hero-title {
     color: #ffffff;
@@ -728,3 +658,139 @@ textarea{
     cursor: pointer;
 }
 
+
+
+@media screen and (min-width: 768px) and (max-width: 1157px){
+
+    .global-header {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .nav-bar {
+            list-style: none;
+            font-weight: 500;
+            color: var(--subtitle-color);
+            display: inline-flex;
+            justify-content: center;
+        }
+    
+        .nav-list {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            line-height: 1.5;
+        }
+    
+        .nav-list a {
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            outline: none;
+        }
+    
+        .nav-list a.active {
+            border-bottom: 4px solid #404BBF;
+            ;
+            padding-bottom: 16px;
+        }
+    
+        [href$=".html"]:hover {
+            color: #404BBF;
+        }
+    
+        [href$=".html"]:focus {
+            color: #404BBF;
+        }
+    
+        /* PHONE AND EMAIL COLOR */
+    
+        .contact {
+            list-style: none;
+            line-height: 1.5;
+            display: flex;
+            gap: 40px;
+            padding-left: 330px;
+            flex-direction: column;
+        }
+    
+        .contact>li>a {
+            color: var(--text-color)
+        }
+    
+        .contact>li>a:hover {
+            color: #404BBF;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+        .contact>li>a:focus {
+            color: #404BBF;
+            outline: none;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .global-header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-bar {
+        list-style: none;
+        font-weight: 500;
+        color: var(--subtitle-color);
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        line-height: 1.5;
+    }
+
+    .nav-list a {
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        outline: none;
+    }
+
+    .nav-list a.active {
+        border-bottom: 4px solid #404BBF;
+        ;
+        padding-bottom: 16px;
+    }
+
+    [href$=".html"]:hover {
+        color: #404BBF;
+    }
+
+    [href$=".html"]:focus {
+        color: #404BBF;
+    }
+
+    /* PHONE AND EMAIL COLOR */
+
+    .contact {
+        list-style: none;
+        line-height: 1.5;
+        display: inline-flex;
+        gap: 40px;
+        padding-left: 330px;
+    }
+
+    .contact>li>a {
+        color: var(--text-color)
+    }
+
+    .contact>li>a:hover {
+        color: #404BBF;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .contact>li>a:focus {
+        color: #404BBF;
+        outline: none;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
