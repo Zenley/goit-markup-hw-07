@@ -104,7 +104,7 @@ h4 {
 /* Background color for hero section */
 
 .hero-section {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/office.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/office.jpg");
     background-position: center;
     background-size: cover;
     height: 600px;
