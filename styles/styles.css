@@ -709,6 +709,8 @@ textarea {
      font-size: 36px;
      color: var(--text-color);
      font-weight: 700;
+     position: absolute;
+     top: 7%;
  }
 
  .mobile-nav-list a.active {
@@ -755,8 +757,13 @@ textarea {
 .social-media-phone{
     display: flex;
     justify-content: space-around;
-    margin-left: 12px;
+    margin-left: 25px;
 
+}
+
+.mobile-footer{
+    position: absolute;
+    bottom: 5%;
 }
 
 }
