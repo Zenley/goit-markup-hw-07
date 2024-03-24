@@ -749,9 +749,15 @@ textarea {
     border: 1px solid #E7E9FC;
     border-radius: 50%;
     outline: none;
-    background-color: background: #E7E9FC;;
+    background-color: #E7E9FC;
 }
 
+.social-media-phone{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 12px;
+
+}
 
 }
 
