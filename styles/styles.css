@@ -651,10 +651,16 @@ textarea {
     cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 767px) {
 
-    .nav-bar {
+    .container .nav-bar {
         display: none;
+        }
+
+    .container{
+        max-width: 767px;
     }
 
     .contact {
@@ -695,7 +701,57 @@ textarea {
         outline: none;
     }
 
- 
+ .mobile-nav-list {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     list-style: none;
+     font-size: 36px;
+     color: var(--text-color);
+     font-weight: 700;
+ }
+
+ .mobile-nav-list a.active {
+     color:  #404BBF;
+ }
+
+
+ /* PHONE AND EMAIL COLOR */
+
+ .mobile-contact {
+     list-style: none;
+     line-height: 1.5;
+     display: flex;
+     flex-direction: column-reverse;
+     gap: 10px;
+ }
+
+.phone-mobile{
+    color: #4D5AE5;
+    font-size: 36px;
+    font-weight: 700;
+}
+.mail-phone{
+    color: #434455;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.menu-toggle{
+    height: 24px;
+    width: 24px;
+    position:absolute;
+    right: 15px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E7E9FC;
+    border-radius: 50%;
+    outline: none;
+    background-color: background: #E7E9FC;;
+}
+
 
 }
 
@@ -892,3 +948,18 @@ textarea {
 
 }
 
+.js-menu-container {
+    display: none;
+}
+
+.js-menu-container.is-open{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+}
