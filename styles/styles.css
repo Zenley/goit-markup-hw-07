@@ -157,7 +157,6 @@ h4 {
 .section-one {
     display: flex;
     justify-content: center;
-    padding: 50px;
 }
 
 .paragraph-icon {
@@ -658,8 +657,15 @@ textarea {
 }
 
 
-
 @media screen and (max-width: 767px) {
+
+.section-three {
+        display: flex;
+        justify-content: center;
+        padding: 94px 0;
+        background-color: #F4F4FD;
+        margin-top: 40px;
+    }
 
     .container .nav-bar {
         display: none;
@@ -849,10 +855,6 @@ flex-wrap: wrap;
 @media screen and (min-width: 768px) {
 
 
-    .global-header {
-        display: flex;
-        justify-content: center;
-    }
 
     .nav-bar {
         list-style: none;
@@ -969,6 +971,13 @@ flex-wrap: wrap;
 }
 
 @media screen and (min-width: 1158px) {
+
+
+    .section-one {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+        }
 
     .global-header {
         display: flex;
