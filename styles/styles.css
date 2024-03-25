@@ -752,11 +752,12 @@ textarea {
     right: 6.5%;
     top: 2.8%;
     border: 1px solid #E7E9FC;
-    border-radius: 40%;
+    border-radius: 50%;
     outline: none;
     background-color: #E7E9FC;
     color: black;
     text-align: center;
+    padding-top: 3px;
 }
 
 .social-media-phone{
