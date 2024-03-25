@@ -252,6 +252,7 @@ h4 {
     line-height: 1.5;
     display: flex;
     gap: 24px;
+    margin-right: 20px;
 }
 
 .our-team-pics>li {
@@ -601,10 +602,10 @@ textarea {
 }
 
 .subscribe-footer {
-   display: flex;
-   justify-content: center;
-   align-self: center;
-   margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 60px;
 }
 
 .sub-btn {
@@ -748,8 +749,8 @@ textarea {
     height: 24px;
     width: 24px;
     position:absolute;
-    right: 10%;
-    top: 5%;
+    right: 6.5%;
+    top: 2.8%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -787,6 +788,7 @@ textarea {
     justify-content: center;
     font-size: 36px;
     font-weight: 700;
+    margin-right: 25px;
 }
 
 .section-two{
@@ -834,7 +836,13 @@ flex-wrap: wrap;
     align-items: center;
 }
 
-
+.footer-email button[type=submit]{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 33%;
+}
 
 }
 

@@ -17,7 +17,7 @@
 
 <body>
     <div class="js-menu-container">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-toggle js-close-menu"> &times;
             <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path fill-rule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -443,17 +443,18 @@
         </div>
         <div class="container">
             <div class="subscribe-footer">
-
                 <form class="position-mail">
                     <span class="subscribe-bottom">Subscribe</span>
-                    <label class="footer-email">
-                        <input type="text" name="email" required class="mail-style" placeholder="E-mail">
-                        <button type="submit" class="sub-btn">Subscribe
-                            <svg class="send">
-                                <use href="./svg/send-mail.svg#icon-send-mail"></use>
-                            </svg>
-                        </button>
-                    </label>
+                    <div class="sub-footer">
+                        <label class="footer-email">
+                            <input type="text" name="email" required class="mail-style" placeholder="E-mail">
+                            <button type="submit" class="sub-btn">Subscribe
+                                <svg class="send">
+                                    <use href="./svg/send-mail.svg#icon-send-mail"></use>
+                                </svg>
+                            </button>
+                        </label>
+                    </div>
                 </form>
             </div>
         </div>
