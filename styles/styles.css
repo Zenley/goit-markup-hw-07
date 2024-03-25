@@ -806,6 +806,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
 }
 
 .our-team{
@@ -1139,6 +1140,82 @@ flex-wrap: wrap;
     font-family: var(--logo-font-family);
     font-weight: 800;
     font-size: 18px;
+}
+
+.address {
+    line-height: 1.5;
+    color: #ffffff;
+    padding-top: 16px;
+    display: flex;
+    padding-left: 365px;
+}
+
+.footer {
+    background-color: #2E2F42;
+    height: 312px;
+    padding: 94px 0;
+    display: flex;
+}
+
+.logo-footer::before {
+    content: "WEB";
+    color: #4D5AE5;
+    font-family: var(--logo-font-family);
+    font-weight: 800;
+    font-size: 18px;
+    padding-left: 365px;
+}
+
+.logo-footer {
+    font-family: var(--logo-font-family);
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.31;
+    font-size: 18px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.footer .container h4 {
+    font-family: var(--title-font-family);
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+    position: relative;
+    left: 14%;
+}
+
+.social-media-footer {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    position: relative;
+    right: 20%;
+}
+
+.social-media-footer svg {
+    width: 20px;
+    height: 20px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-footer .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+
+.social-media-footer :hover,
+.social-media-footer :focus {
+    background-color: #10A5F5;
+    outline: none;
 }
 
 }
